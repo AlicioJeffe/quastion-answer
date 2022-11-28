@@ -1,0 +1,35 @@
+<%- include('inc/header.ejs') %>
+
+<div class="container mt-4">
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Making question</h3>
+        </div>
+
+        <div class="card-body">
+            <form action="/sendForm" method="post">
+                <br>
+                <div class="form-group">    
+                    <label for="">Title</label>
+                    <input name="title" type="text" class="form-control">
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <textarea  class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+
+<%- include('inc/footer.ejs') %>
